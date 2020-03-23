@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical" >
+
+        <!-- Question 1 -->
+
+        <TextView
+
+            style="@style/questionStyle"
+            android:text="1. Who gave Bhishma the boon that he would die only when he wished?"/>
+
+
+        <RadioGroup
+            android:id="@+id/num_one_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/shantanu_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Shantanu" />
+            <RadioButton
+                android:id="@+id/krishna_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Krishna" />
+            <RadioButton
+                android:id="@+id/dhritarashtra_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Dhritarashtra" />
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Ved Vyasa" />
+
+        </RadioGroup>
+
+        <!-- Question 2 -->
+
+        <TextView
+
+            style="@style/questionStyle"
+            android:text="2. Who was the daughter of Dhritarashtra?"
+            />
+
+        <RadioGroup
+            android:id="@+id/num_two_radio_group"
+            style="@style/radioStyle">
+            />
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Radha" />
+            <RadioButton
+                android:id="@+id/dushala_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Dushala" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Ganga" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Kunti" />
+
+        </RadioGroup>
+
+        <!-- Question 3 -->
+
+        <TextView
+
+            style="@style/questionStyle"
+            android:text="3. The great war lasted for?"
+            />
+
+
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Please enter your answer"
+            android:inputType="text"/>
+
+
+        <!-- Question 4 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Who was King Santunu's  wife?"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <CheckBox
+            android:id="@+id/ganga_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganga"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/kunti_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kunti"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/radha_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radha"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/satyavati_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satyavati"
+            android:textSize="16sp"
+            android:layout_marginBottom="16sp"/>
+
+        <TextView
+
+            style="@style/questionStyle"
+            android:text="5. Who recited the Mahabharata?"
+            />
+
+
+        <!-- Question 5 -->
+
+        <RadioGroup
+            android:id="@+id/num_five_radio_group"
+
+            style="@style/radioStyle">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Shantanu" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Krishna" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Dhritarashtra" />
+            <RadioButton
+                android:id="@+id/ved_vyasa_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Ved Vyasa" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</ScrollView>
